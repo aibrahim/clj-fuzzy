@@ -12,7 +12,8 @@
   * `a`, `b`, `c`  define the shape of triangular function
   "
   [xs a b c]
-  {:pre [(number? a)
+  {:pre [(every? number? xs)
+         (number? a)
          (number? b)
          (number? c)
          (<= a b c)]}
